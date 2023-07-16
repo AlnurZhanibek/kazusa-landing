@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.hero {
+  background: #242d5a;
+  background-image: url("img/home-decor.webp");
+  background-position: bottom right;
+  background-size: 900px;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-bottom-left-radius: 72px;
+  border-bottom-right-radius: 72px;
+}
+
+.hero .wrapper {
+  max-width: 1200px;
+  padding-top: 24px;
+  padding-bottom: 72px;
+  margin: 0 auto;
+}
+
+.hero header {
+  display: flex;
+  gap: 36px;
+}
+
+.hero header .logo {
+  font-size: 18px;
+}
+
+.hero header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.hero header nav li {
+  padding: 0 16px;
+}
+
+.hero header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero .content {
+  margin-top: 128px;
+  margin-left: 72px;
+}
+
+.hero .content h2 {
+  max-width: 900px;
+  font-weight: 400;
+  line-height: 0.95;
+  font-size: 110px;
+}
+
+.hero .content .info {
+  margin-top: 36px;
+  display: flex;
+  gap: 24px;
+  font-size: 24px;
+}
+
+.hero .content .info p {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.hero .content .action {
+  margin-top: 72px;
+}
+
+.hero .content .action button {
+  border: 2px solid #fff;
+  border-radius: 36px;
+  font-size: 20px;
+  padding: 16px 32px;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+.hero .content .action button:hover {
+  background: #fff;
+  color: 242d5a;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 16px;
+    height: 100vh;
+    background-size: 300px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .hero .wrapper {
+    padding: 0;
+    margin: 0;
+    max-width: unset;
+  }
+
+  .hero .content {
+    margin-left: 0;
+  }
+
+  .hero .content h2 {
+    max-width: 300px;
+    font-size: 36px;
+  }
+
+  .hero .content .info {
+    flex-direction: column;
+  }
+
+  .hero .content .info p {
+    font-size: 16px;
+  }
+
+  .hero .content .action button {
+    font-size: 16px;
+  }
+
+  .hero nav {
+    display: none;
+  }
+}
